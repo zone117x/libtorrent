@@ -106,18 +106,6 @@ build_script:
   & if defined python_package ( python setup.py --bjam bdist_msi )
   )
 
-test_script:
-- cd %ROOT_DIRECTORY%\test
-- if defined x64 (
-  appveyor-retry b2.exe --hash -j2 openssl-version=pre1.1 address-model=64 win-tests %compiler% variant=%variant% link=shared
-  ) else (
-  appveyor-retry b2.exe --hash -j2 openssl-version=pre1.1 address-model=32 win-tests %compiler% variant=%variant% link=shared
-  )
-- if defined sim (
-  cd %ROOT_DIRECTORY%\simulation
-  & b2.exe --hash -j2 openssl-version=pre1.1 link=shared crypto=built-in %compiler%
-  )
-
 artifacts:
   - path: bindings\python\dist\*.msi
     name: python-binding-win32
