@@ -638,6 +638,8 @@ within the library.
 building openssl for windows
 ----------------------------
 
+Download from: https://www.npcglib.org/~stathis/blog/precompiled-openssl/
+
 To build openssl for windows with Visual Studio 7.1 (2003) execute the following commands
 in a command shell::
 
