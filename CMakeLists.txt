@@ -3,6 +3,8 @@ project(libtorrent)
 set (SOVERSION "8")
 set (VERSION "1.1.5")
 
+set(CMAKE_SUPPRESS_REGENERATION true)
+
 set(sources
 	web_connection_base
 	alert
