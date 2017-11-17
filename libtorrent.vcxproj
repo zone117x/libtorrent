@@ -456,7 +456,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;LIBTORRENT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\openssl\include;C:\Libraries\boost_1_63_0;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\openssl\include;C:\Libraries\boost_1_63_0;$(ProjectDir)\include;$(ProjectDir)\ed25519\src</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -471,7 +471,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;LIBTORRENT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\openssl\include64;C:\Libraries\boost_1_63_0;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\openssl\include64;C:\Libraries\boost_1_63_0;$(ProjectDir)\include;$(ProjectDir)\ed25519\src</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
